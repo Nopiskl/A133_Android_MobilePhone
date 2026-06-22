@@ -1,8 +1,10 @@
 # Notice
 
-原因：使用R818 tina4 sdk时，由于芯片配套使用的的PMIC不同，配套SCP协处理器固件也不同，
-因此在FES/BOOT0会有PMIC检测，如果是A133的PMIC(AXP707)就无法继续加载
-直接使用编译出来的R818相关boot0无法启动，会卡在
+**Language:** English | [中文](READEME_CN.md)
+
+When using the R818 Tina4 SDK, the PMIC and SCP coprocessor firmware differ from the A133 hardware used in this project.
+
+FES/BOOT0 performs PMIC detection. If the board uses the A133 PMIC, `AXP707`, the R818-generated BOOT0 cannot continue loading. Using the R818 BOOT0 output directly will stop at the following log:
 
 ```txt
 [196]HELLO! BOOT0 is starting!
@@ -20,4 +22,4 @@
 [263]ic cant match axp, please check...
 ```
 
-解决方法：先执行正常编译流程，编译完成后会在bin目录看到一系列bin，然后拿补丁中的bin替换后，直接pack即可
+Solution: run the normal build flow first. After the build finishes, a series of binaries will appear in the `bin` directory. Replace those binaries with the patched binaries, then run `pack` directly.

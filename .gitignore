@@ -1,1 +1,3 @@
-Linux/Custom_A133_Qt_GPU_Rootfs/
+Linux/Custom_A133_Qt_GPU_Rootfs/*
+!Linux/Custom_A133_Qt_GPU_Rootfs/README.md
+!Linux/Custom_A133_Qt_GPU_Rootfs/README_CN.md

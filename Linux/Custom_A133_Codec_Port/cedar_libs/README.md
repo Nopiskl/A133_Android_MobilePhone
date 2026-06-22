@@ -1,5 +1,8 @@
 # Notice
-如果发现ubuntu下音频播放问题，需要使用tina alsa库+最简asound.conf
+
+**Language:** English | [中文](README_CN.md)
+
+If audio playback issues appear under Ubuntu, use the Tina ALSA library together with a minimal `asound.conf`.
 
 ```conf
 ctl.!default {

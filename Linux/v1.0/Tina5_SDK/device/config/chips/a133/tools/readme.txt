@@ -1,1 +1,3 @@
-use pack/common/tools
+Language: English | Chinese: readme_CN.txt
+
+Use pack/common/tools.
